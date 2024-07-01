@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+    *{
+      margin:0;
+      padding:0;
+      box-sizing: border-box;
+    }
+    .p-md-5{
+      padding: 70px 90px 70px 70px;
+    }
+    .carousel-inner-1 {
+      white-space: nowrap; 
+      /* overflow: hidden;  */
+      overflow-x: auto; 
+      overflow-y: hidden; 
+      scrollbar-width: none; 
+      -ms-overflow-style: none; 
+      display: flex; 
+      animation: scroll 20s infinite linear; 
+    }
+    .carousel-inner-1::-webkit-scrollbar {
+      display: none; 
+    }
+    .item {
+      flex: 0 0 auto; 
+      width: calc(100vw / 3); 
+      min-width: 500px; 
+      display: inline-block;
+      vertical-align: top; 
+      text-align: center; 
+      padding: 100px; 
+      box-sizing: border-box; 
+    }
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+    @media (max-width: 767.98px) {
+      .navbar {
+          background-color: #ffff !important; 
+      }
+      .navbar-brand {
+          background-image: url('https://capigo-demo.pbminfotech.com/html-demo/images/dark-logo.svg');
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 30%;
+      }
+      .navbar-brand img {
+          display: none; 
+      }
+      .navbar-toggler {
+          background-color: black !important;
+      }
+      .navbar-nav .nav-item .nav-link,
+      .navbar-nav .nav-item li {
+          color: black !important; 
+      }
+      .text-white {
+          color: black !important; 
+      }
+  }
+.circle-progress-bar {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px; 
+  }
+  
+  .circle-progress-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    bottom: 41%;
+    right: 76%;
+  }
+  
+  .text-right {
+    /* text-align: right; */
+    margin-top: 10px;
+    margin-left:85px 
+  }
+  
+  .transform-translate {
+    transform: translate(-50%, -50%);
+  }
+  
+  #progressCanvas {
+    position: absolute;
+    top: -54px;
+
+    
+    left: 0;
+  }
+  
+  .w-75 {
+    width: 75%;
+  }
+  
+  .fs-5 {
+    font-size: 1.25rem; 
+  }
+  
+  
+
